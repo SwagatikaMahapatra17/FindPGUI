@@ -1,0 +1,46 @@
+<app-homenav></app-homenav>
+<div class="parent">
+
+    <div class="container">
+
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <form>
+                <div class="form-grid">
+                    <div class="input-box">
+                        <input type="text" #firstname name="firstname" required>
+                        <label>First Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" #lastname name="lastname" required>
+                        <label>Last Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" #phonenumber name="phonenumber" required>
+                        <label>Contact Number</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" #email name="EmailId" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" #password name="Password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" #role name="role" required>
+                        <label>Role</label>
+                    </div>
+                </div>
+                <button type="button" class="btn"
+                    (click)="onSignUp(firstname.value, lastname.value, phonenumber.value, email.value, password.value, role.value)">Sign
+                    Up</button>
+                <div class="login-link">
+                    You have an account? 
+                    <a [routerLink]="'/login'">Login</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

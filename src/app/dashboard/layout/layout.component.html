@@ -1,0 +1,66 @@
+<header class="container-outer" fxLayout="row" fxLayoutAlign="space-between center" fxShow.gt-sm fxHide.lt-sm>
+	<div class="container" fxFlex="20">
+		<div class="container-inner">
+			<a routerLink="['']" routerLinkActive="router-link-active">Home</a>
+		</div>
+	</div>
+	<div class="container" fxFlex="80">
+		<div class="container-inner">
+			DESKTOP HEADER
+		</div>
+	</div>
+	<div class="container" fxFlex="20">
+		<div class="container-inner">
+			<a routerLink="['/row-examples']" routerLinkActive="router-link-active">Examples</a>
+		</div>
+	</div>
+</header>
+
+<header class="container-outer" fxLayout="column" fxLayoutAlign="center stretch" fxShow.lt-sm fxHide.lt-xl>
+	<div class="container">
+		<div class="container-inner">
+			<a routerLink="['']" routerLinkActive="router-link-active">Home</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="container-inner">
+			<a routerLink="['/row-examples']" routerLinkActive="router-link-active">Examples</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="container-inner">
+			CELL PHONE HEADER
+		</div>
+	</div>
+</header>
+
+<!-- <header class="container-outer" fxLayout="row" fxLayoutAlign="space-between center" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="center stretch">
+	<div class="container" fxFlex="20">
+		<div class="container-inner">
+			<a routerLink="['']" routerLinkActive="router-link-active">Home</a>
+		</div>
+	</div>
+	<div class="container" fxFlex="80" fxFlexOrder.lt-sm="3">
+		<div class="container-inner">
+			Search field component goes here
+		</div>
+	</div>
+	<div class="container" fxFlex="20" fxFlexOrder.lt-sm="2">
+		<div class="container-inner">
+			<a routerLink="['/row-examples']" routerLinkActive="router-link-active">Examples</a>
+		</div>
+	</div>
+</header> -->
+<div class="container">
+	<nav class="container-inner">
+		<ul>
+			<li><a routerLink="['/row-examples']" routerLinkActive="router-link-active">Row Examples</a></li>
+			<li><a routerLink="['/col-examples']" routerLinkActive="router-link-active">Column Examples</a></li>
+		</ul>
+	</nav>
+</div>
+<footer class="container-outer" fxLayout="row" fxLayoutAlign="space-between start">
+	<div class="container" fxFlex="80">Copyright Outer container</div>
+	<div class="container" fxFlex="20">Links Outer Container</div>
+</footer>

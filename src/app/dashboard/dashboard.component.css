@@ -1,0 +1,17 @@
+
+
+/* .ag-center-cols-container
+{
+    width: 100% !important;
+} */
+.gridFooter
+{
+    width: 82%;
+    height: 5vh;
+    position: absolute;
+    bottom: 5px;
+    background-color: rgb(44, 46, 46);
+    border: black;
+    border-style: solid;
+    border-width: 0.1rem;
+}

@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color:transparent; /* transparent */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.nav-item {
+  cursor: pointer;
+  font-weight: 600;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* overlay */
+  z-index: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  margin-top: 120px;
+}
+
+
+.btn {
+  width: fit-content;
+  height: 40px;
+  background: #D4AF37;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+.navbar .nav-link,
+.navbar  {
+  color: #D4AF37 !important;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.dropdown-menu {
+  z-index: 3;
+}
+.navbar-home {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* Safari support */
+}
+
+.navbar-default {
+  position: static;
+  width: 100%;
+  background-color: black; /* or solid background */
+}
+
+
+

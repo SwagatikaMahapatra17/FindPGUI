@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #030303;
+      }
+
+      li {
+        float: left;
+      }
+
+      li.right {
+        float: right; /* Pushes logout to the right side */
+      }
+
+      li button, li div {
+        display: block;
+        color: rgb(235, 214, 28);
+        
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li button:hover, li div:hover {
+        background-color: #000000;
+        cursor: pointer;
+      }
+
+      .active {
+        background-color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><button>cnavbar(Home)</button></li>
+      <li><button>cpages(Contact)</button></li>
+      <li><button>layout(About)</button></li>      
+      <li class="right"><div>Log Out</div></li>
+      
+    </ul>
+
+    <header>
+      <h1>Dashboard works</h1>
+    </header>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Sl#</th>
+          <th>State Id</th>
+          <th>City Name</th>
+          <th>City Id</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(resp of dashboardobj; track resp.stateId; let i=$index){
+        <tr>
+          <td>{{i+1}}</td>
+          <td>{{resp.stateId}}</td>
+          <td>{{resp.cityName}}</td>
+          <td>{{resp.id}}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+
+    <div style="text-align: right;">
+      <button type="button" class="btn btn-primary">
+        <i class="fa fa-plus"></i> ADD
+      </button>
+    </div>
+  </body>
+</html>
